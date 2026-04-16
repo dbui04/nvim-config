@@ -7,6 +7,9 @@ opt.wrap = false -- Don't wrap lines
 opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
+-- Visual settings
+opt.termguicolors = true -- Enable 24-bit colors
+
 -- Indentation
 opt.tabstop = 4 -- Tab width
 opt.shiftwidth = 4 -- Indent width
