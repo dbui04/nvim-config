@@ -6,6 +6,7 @@ require("conform").setup({
 	formatters_by_ft = {
 		c = { lsp_format = "prefer" },
 		cpp = { lsp_format = "prefer" },
+		markdown = { lsp_format = "prefer" },
 		lua = { "stylua" },
 		python = { "ruff" },
 		rust = { "rustfmt", lsp_format = "fallback" },

@@ -69,7 +69,9 @@ require("mini.git").setup() -- Track git related data and allow git calls inside
 require("mini.icons").setup() -- Provide file icons
 require("mini.statusline").setup() -- Show status line
 
-require("mini.files").setup() -- Allow navigating file system
+require("mini.files").setup({
+	permanent_delete = false,
+}) -- Allow navigating file system
 
 vim.keymap.set("n", "<leader>fm", function()
 	MiniFiles.open(vim.api.nvim_buf_get_name(0))
