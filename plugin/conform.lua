@@ -10,6 +10,10 @@ require("conform").setup({
 		lua = { "stylua" },
 		python = { "ruff" },
 		rust = { "rustfmt", lsp_format = "fallback" },
+		javascript = { "prettierd" },
+		html = { "prettierd" },
+		css = { "prettierd" },
+		astro = { "prettierd" },
 	},
 	format_on_save = {
 		-- These options will be passed to conform.format()

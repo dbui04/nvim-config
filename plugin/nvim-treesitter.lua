@@ -12,4 +12,15 @@ vim.api.nvim_create_autocmd("PackChanged", {
 
 vim.pack.add({ "https://github.com/nvim-treesitter/nvim-treesitter" })
 
-require("nvim-treesitter").install({ "cpp", "c", "python", "lua", "markdown", "markdown_inline", "html", "latex", "yaml" })
+require("nvim-treesitter").install({
+	"astro",
+	"cpp",
+	"c",
+	"python",
+	"lua",
+	"markdown",
+	"markdown_inline",
+	"html",
+	"latex",
+	"yaml",
+})
