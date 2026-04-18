@@ -2,6 +2,7 @@ vim.pack.add({ "https://github.com/nvim-mini/mini.nvim" })
 
 require("mini.starter").setup() -- Dashboard
 -- require("mini.notify").setup() -- Notification UI
+require("mini.pairs").setup() -- Auto-pair brackets
 require("mini.sessions").setup() -- Session management
 
 vim.keymap.set("n", "<leader>sw", function()
