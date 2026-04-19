@@ -4,6 +4,7 @@ opt.number = true -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true -- Highlight current line
 opt.wrap = false -- Don't wrap lines
+opt.linebreak = true -- Wrap line at convenient points
 opt.scrolloff = 10 -- Keep 10 lines above/below cursor
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
@@ -45,3 +46,17 @@ opt.synmaxcol = 300 -- Syntax highlighting limit
 opt.updatetime = 300 -- Faster completion
 opt.redrawtime = 10000
 opt.maxmempattern = 20000
+
+vim.diagnostic.config({
+	update_in_insert = false,
+	severity_sort = true,
+	float = { border = "rounded", source = "if_many" },
+	underline = { severity = { min = vim.diagnostic.severity.WARN } },
+
+	-- Can switch between these as you prefer
+	virtual_text = true, -- Text shows up at the end of the line
+	virtual_lines = false, -- Text shows up underneath the line, with virtual lines
+
+	-- Auto open the float, so you can easily read the errors when jumping with `[d` and `]d`
+	jump = { float = true },
+})

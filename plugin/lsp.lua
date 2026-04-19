@@ -7,8 +7,13 @@ vim.pack.add({
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-	ensure_installed = { "markdown_oxide", "lua_ls", "clangd", "ty", "ruff", "astro" },
+	ensure_installed = { "bashls", "jsonls", "lua_ls", "clangd", "ty", "ruff", "astro" },
+	automatic_enable = {
+		exclude = {
+			"biome",
+		},
+	},
 })
 require("mason-tool-installer").setup({
-	ensure_installed = { "prettierd", "stylua" },
+	ensure_installed = { "shfmt", "prettierd", "biome", "stylua" },
 })

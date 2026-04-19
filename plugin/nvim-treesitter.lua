@@ -23,4 +23,6 @@ require("nvim-treesitter").install({
 	"html",
 	"latex",
 	"yaml",
+	"bash",
+	"json",
 })
