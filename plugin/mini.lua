@@ -1,6 +1,7 @@
 vim.pack.add({ "https://github.com/nvim-mini/mini.nvim" })
 
 require("mini.starter").setup() -- Dashboard
+require("mini.surround").setup() -- Add, delete and jump to surrounding brackets
 -- require("mini.notify").setup() -- Notification UI
 require("mini.pairs").setup() -- Auto-pair brackets
 require("mini.sessions").setup() -- Session management

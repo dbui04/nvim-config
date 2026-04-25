@@ -1,5 +1,7 @@
 # Neovim config
 
+Terminal: Ghostty
+
 Install required tools:
 
 ```bash
