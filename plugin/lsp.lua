@@ -15,5 +15,5 @@ require("mason-lspconfig").setup({
 	},
 })
 require("mason-tool-installer").setup({
-	ensure_installed = { "shfmt", "prettierd", "biome", "stylua" },
+	ensure_installed = { "denols", "biome", "shfmt", "stylua" },
 })

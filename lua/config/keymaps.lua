@@ -6,6 +6,5 @@ vim.g.mapleader = " "
 -- map("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 -- map("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to last edited Buffer" })
 
--- Terminal
-local term_buf = nil
-local term_win = nil
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Save" })
+vim.keymap.set("n", "<leader>q", "<cmd>q<cr>", { desc = "Quit" })
