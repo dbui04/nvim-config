@@ -26,3 +26,10 @@ require("nvim-treesitter").install({
 	"bash",
 	"json",
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = { "c", "cpp", "python", "rust", "markdown", "lua", "html", "astro", "bash", "json", "yaml" },
+	callback = function()
+		vim.treesitter.start()
+	end,
+})

@@ -4,6 +4,14 @@ require("mini.starter").setup() -- Dashboard
 require("mini.surround").setup() -- Add, delete and jump to surrounding brackets
 -- require("mini.notify").setup() -- Notification UI
 require("mini.pairs").setup() -- Auto-pair brackets
+require("mini.move").setup() -- Move selected text around
+
+require("mini.indentscope").setup({
+	draw = {
+		animation = require("mini.indentscope").gen_animation.none(),
+	},
+}) -- Show vertical line for scope
+
 require("mini.sessions").setup() -- Session management
 
 vim.keymap.set("n", "<leader>sw", function()

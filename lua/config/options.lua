@@ -29,12 +29,6 @@ opt.hidden = true -- Allow hidden buffers
 opt.mouse = "a" -- Enable mouse support
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 
--- Search settings
-opt.ignorecase = true -- Case insensitive search
-opt.smartcase = true -- Case sensitive if uppercase in search
-opt.hlsearch = false -- Don't highlight search results
-opt.incsearch = true -- Show matches as you type
-
 -- File handling
 opt.backup = false -- Don't create backup files
 opt.writebackup = false -- Don't create backup before writing
