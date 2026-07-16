@@ -8,15 +8,9 @@ vim.pack.add({
 require("mason").setup()
 
 require("mason-lspconfig").setup({
-	ensure_installed = { "tombi", "bashls", "jsonls", "lua_ls", "clangd", "ty", "ruff", "astro" },
-	automatic_enable = {
-		exclude = {},
-	},
+	ensure_installed = { "rust_analyzer", "tombi", "bashls", "jsonls", "lua_ls", "clangd", "ty", "ruff", "astro" },
 })
+
 require("mason-tool-installer").setup({
 	ensure_installed = { "denols", "shfmt", "stylua" },
 })
-
--- require("mason-nvim-dap").setup({
--- 	-- ensure_installed = {},
--- })

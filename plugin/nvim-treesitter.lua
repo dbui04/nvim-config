@@ -14,6 +14,7 @@ vim.pack.add({ "https://github.com/nvim-treesitter/nvim-treesitter" })
 
 require("nvim-treesitter").install({
 	"astro",
+	"rust",
 	"cpp",
 	"c",
 	"python",
@@ -21,7 +22,6 @@ require("nvim-treesitter").install({
 	"markdown",
 	"markdown_inline",
 	"html",
-	"latex",
 	"yaml",
 	"bash",
 	"json",
